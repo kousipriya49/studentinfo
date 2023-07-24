@@ -1,0 +1,25 @@
+
+/* .cou
+{
+  background-image: url("courses.jpg");
+  background-size: cover;
+} */
+  .App {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 800;
+   
+    margin: 100px auto;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
