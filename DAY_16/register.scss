@@ -1,0 +1,176 @@
+// Variables
+// =====================
+
+
+$origin-odd       : left;
+$origin-even      : left;
+$square-limit     : 50;
+$row-limit        : $square-limit;
+$square-size      : 50px;
+$square-border    : 1px solid white;
+
+// mixins
+// ======
+
+$default180       : 180deg;
+$even20           : 20deg;
+$odd20            : -20deg;
+
+$odd-0            : rotateZ($default180) rotateX(0) rotateY($default180) skewY($odd20);
+$odd-1            : rotateZ($default180) rotateX(0) rotateY($default180) skewY($even20);
+$even-0           : rotateZ($default180) rotateX(0) rotateY($default180) skewY($even20);
+$even-1           : rotateZ($default180) rotateX(0) rotateY($default180) skewY($odd20);
+
+
+
+
+// keyframe - animations
+// =====================
+
+@-webkit-keyframes startx {
+  0% {
+    height: $square-size;
+    width: 0;
+    border-color: transparent;
+    opacity: 0%;
+  }
+  50%  {
+    height: $square-size;
+    width: $square-size;
+    border-color: white;
+    opacity: 100%;
+  }
+  100% {
+    height: $square-size;
+    width: 0;
+    border-color: transparent;
+    opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes starty {
+  0%    {
+    // -webkit-transform-origin: top;
+    height: 0;
+    width: $square-size;
+    border-color: transparent;
+    opacity: 0%;
+  }
+  50%  {
+    // -webkit-transform-origin: top;
+    height: $square-size;
+    width: $square-size;
+    border-color: white;
+    opacity: 100%;
+  }
+  100%    {
+    // -webkit-transform-origin: top;
+    height: 0;
+    width: $square-size;
+    border-color: transparent;
+    opacity: 0%;
+  }
+}
+
+
+
+
+@-webkit-keyframes sequenceOdd {
+    0%    { -webkit-transform: skewY($odd20);}
+    50%   { -webkit-transform: skewY($even20);}
+    100%  { -webkit-transform: skewY($odd20);}
+}
+@-webkit-keyframes sequenceEven {
+    0%    { -webkit-transform: skewY($even20);}
+    50%   { -webkit-transform: skewY($odd20);}
+    100%  { -webkit-transform: skewY($even20);}
+}
+@-webkit-keyframes rotateContainer {
+    0%    { -webkit-transform-origin: center; -webkit-transform: rotate(0deg);}
+    50%   { -webkit-transform-origin: center; -webkit-transform: rotate(180deg);}
+    100%  { -webkit-transform-origin: center; -webkit-transform: rotate(360deg);}
+}
+@-webkit-keyframes bgc {
+    0%    { border-color: transparent; background-color: hsla(random(365), 90, 50, 1);}
+    100%  { border-color: transparent; background-color: hsla(random(365), 90, 50, 1);}
+}
+
+
+
+
+
+// class generators
+// =================
+
+@for $i from 1 through $square-limit {
+    .container .row .square.square-#{$i} {
+      left: ($square-size + 1) * ($i - 1);
+      -webkit-animation-delay: $i * 2s !important;
+    }
+}
+@for $i from 2 through $row-limit {
+    .row.row-#{$i} .square {
+      top: $square-size * ($i - 1);
+    }
+}
+
+
+@for $i from 1 through $row-limit {
+  .row.row-#{$i} {
+    @for $a from 1 through $square-limit {
+      .square.square-#{$a} {
+        // -webkit-animation-delay: $i * ($a * 4s) !important;
+        // -webkit-animation-delay: random(400) + s !important;
+        -webkit-animation-delay: random(100) + s !important;
+      }
+    }
+  }
+}
+
+
+// Defaults for elements
+// =====================
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  height: 640px;
+  width: 640px;
+  display: block;
+  // -webkit-animation: starty 10s infinite, rotateContainer 400s infinite;
+  .row {
+    position: relative;
+    .square {
+      position: absolute;
+      border: 1px solid transparent;
+      -webkit-perspective: 1000px;
+      -webkit-transform-style: preserve-3d;
+    }
+    &:nth-child(odd) .square {
+      &:nth-child(odd) {
+        -webkit-animation: startx 2s infinite;//, sequenceOdd 5s infinite;//, bgc 5s 10s infinite;
+        -webkit-transform: $even-1;
+      }
+      &:nth-child(even) {
+        -webkit-animation: starty 2s infinite;//, sequenceOdd 5s infinite;//, bgc 5s 10s infinite;
+        -webkit-transform: $odd-1;
+      }
+    }
+    &:nth-child(even) .square {
+      &:nth-child(odd) {
+        -webkit-animation: starty 2s infinite;//, sequenceEven 5s infinite;//, bgc 5s 10s infinite;
+        -webkit-transform: $even-1;
+      }
+      &:nth-child(even) {
+        -webkit-animation: startx 2s infinite;//, sequenceEven 5s infinite;//, bgc 5s 10s infinite;
+        -webkit-transform: $odd-1;
+      }
+    }
+  }
+}
+
+View Compiled

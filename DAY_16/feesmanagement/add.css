@@ -1,0 +1,35 @@
+
+header{
+  background: rgb(136,122,128);
+  background: linear-gradient(90deg, rgba(136,122,128,0.36747198879551823) 0%, rgba(7,50,54,0.7316176470588236) 20%, rgba(131,165,216,1) 100%);
+    }
+    th{
+        text-align: left;
+    
+    }
+    th, td {
+        padding: 15px;
+      }
+    td {
+        height: 50px;
+        vertical-align: bottom;
+      }
+      tr:hover {background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(90,79,19,1) 100%);}
+      tr:nth-child(even) {background-color: #f2f2f2;}
+      th {
+        background: rgb(136,122,128);
+background: linear-gradient(90deg, rgba(136,122,128,0.36747198879551823) 0%, rgba(7,50,54,0.7316176470588236) 20%, rgba(131,165,216,1) 100%);
+        color: rgb(30, 29, 29);
+      }
+      input {
+        background-color: #3CBC8D;
+        color: white;
+      }
+      input[type=text]:focus {
+        background-color: lightblue;
+      }
+      h1{
+        color:red;
+      }
+    

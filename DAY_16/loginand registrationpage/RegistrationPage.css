@@ -1,0 +1,77 @@
+
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.login_form {
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.login_form h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gogo {
+  margin-bottom: 20px;
+}
+
+.gogo label {
+  font-size: 16px;
+  color: #333333;
+}
+
+.gogo input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.gogo input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.loginbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-secondary:hover {
+  background-color: #333333;
+}
+
+span {
+  color: red;
+  font-size: 14px;
+}
+
+center {
+  text-align: center;
+}

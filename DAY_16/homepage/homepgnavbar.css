@@ -1,0 +1,68 @@
+/* CSS for Navbar container */
+.nav {
+    background-color: #333; /* Set your preferred background color */
+     /* Set your preferred text color */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between;
+    padding: 0.3rem; */
+  }
+  
+  /* CSS for site title link */
+  .site-title {
+    font-size: 3rem;
+    margin-left: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .site-title:hover {
+    text-decoration:none;
+    color: #ffffff;
+  }
+  
+  /* CSS for navigation links */
+ .list {
+    list-style: none;
+    display: flex;
+    padding-right: 110px;
+    padding-top: 20px;
+    font-size: 30px;
+    align-items: center;
+
+  }
+  
+  /* CSS for custom link items */
+  li {
+    margin-left: 1rem; /* Add some space between links */
+  }
+  
+  /* CSS for custom link text */
+  li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  li a:hover {
+    background-color: rgba(200, 186, 238, 0.1); /* Add a background color on hover */
+    color: #ffffff;
+  }
+  
+  /* CSS for the active link */
+  li.active a {
+    background-color: #fff; /* Set a background color for the active link */
+    color: #e61414; /* Set a text color for the active link */
+  }
+  
+  
+  /* Additional styles for the links (optional) */
+  li a:focus {
+    outline: none; /* Remove the default outline on focus */
+  }
+  
+  li a:active {
+    opacity: 0.7; /* Reduce opacity on click */
+  }

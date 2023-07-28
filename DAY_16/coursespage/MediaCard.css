@@ -1,0 +1,248 @@
+/* MediaCard.css
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .card-item {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  */
+  
+  
+  
+  .cou
+  {background-image: url("bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+      
+     
+       padding-top: 5%;
+  }
+      .media-container {
+          display: flex;
+          justify-content: space-between;
+          /* padding-top: 10%; */
+        }
+        @media (max-width: 600px) {
+            .card-item {
+                width: 100%;
+            }
+        } 
+        
+        .courses-available {
+          text-align: center;
+          margin-top: 40px;
+        }
+        h5{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+  .card-item {
+    width: 345px;
+  }
+  /* h1{
+    color: red;
+    font-size: 40px;
+}
+.bod3
+{
+    background-color: pink;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+/* .container1 {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+} */
+
+.box1 {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box1 > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box1 > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  .n{
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .box1:hover { flex: 1 1 50%; }
+  .box1:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+   */
+   
+   .navigation
+   {
+     height: 2rem;
+     background-color: rgba(58, 47, 47, 0.048);
+  }
+    .navigation a {
+      position: relative;
+      font-size: 1.6em;
+      text-decoration: none;
+      font-weight: 500;
+      margin-right: 35px;
+      left: 900px;
+      top:10px;
+      border-radius: 2px;
+      padding: 2px;
+    }
+  .head
+  {
+      background-color: rgba(0,0,0,0.5);
+  }
+  .bcc
+  {
+    background-color: black;
+  }
+  .bod5
+  {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(54,114,141,1) 100%);
+     
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width:100%;
+      height:100vh;
+  }
+  .navigation a::after {
+      content: " ";
+      position: fixed;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 3px;
+      background: rgb(0, 0, 0);
+      border-radius: 5px;
+      transform: scaleX(0);
+      transition: transform.5s; 
+  }
+  .navigation a:hover {
+  
+      transform: scaleX(1);
+      border-bottom: 5px solid rgb(13, 1, 1);
+      /* color: rgb(255, 255, 255); */
+  }
+    #slideshow {
+    overflow: hidden;
+    width:160%;
+    margin: 0 auto;
+    margin-top: 0cm;
+    margin-left: 0cm;
+    position: fixed;
+    height:15cm;
+    }
+    .bod3
+    {
+            background-size: cover;
+      background-attachment: fixed;
+      width: 1400px;
+      height: 600px;
+    }
+    .slide {
+    float: left;
+    height:60cm;
+    width: 3000px;
+    }
+   
+    .slide-wrapper {
+    
+    width: calc(2000px * 7);
+    
+    animation: slide 50s linear infinite;
+    }
+   
+    @keyframes slide {
+    
+
+    10% {
+      margin-left: 0px;
+    }
+    
+    20% {
+      margin-left: calc(-1500px * 1);
+    }
+    
+    30% {
+      margin-left: calc(-1500px * 2);
+    }
+    
+    40% {
+      margin-left: calc(-1500px * 3);
+    }
+    50% {
+      margin-left: calc(-1500px * 4);
+    }
+    60% {
+      margin-left: calc(-1500px * 5);
+    }
+    70% {
+      margin-left: calc(-1500px * 6);
+    }
+    }
+  
+  .heig
+  {
+      width:2cm;
+      height:6cm;
+  }
+  .sliderss
+  {
+     margin-top: -5rem;
+  }
+  /* .navbar5{
+    background-color: aliceblue;
+    opacity: 75%;
+  } */
+  div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+
+
+
+
+  

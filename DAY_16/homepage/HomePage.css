@@ -1,0 +1,295 @@
+
+.containerhomepg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  background-image: url("login1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+bg1
+{
+  background-image: url("login1.jpg");
+  background-size: cover;
+}
+.background-image {
+  background: #FF0099;  
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+ 
+  background-size: cover;
+  
+  
+  
+
+}
+
+.title {
+  font-family:"Brush Script MT";
+  font-size: 160px;
+  font-weight:lighter ;
+  width:50%;
+  float: left;opacity: 0.7; 
+  text-align: left;
+  color: #0e0d0d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* margin-bottom: 200px; */
+}
+
+/* .links {
+  display: flex;
+  gap: 10px;
+} */
+/* 
+.link {
+  padding: 12px 24px;
+  background-color: #b18c77;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; */
+  /* bottom:10;
+  display: inline-block;
+  position: absolute; */
+/* } */
+
+/* .link:hover {
+  background-color: #272222;
+} */
+
+@keyframes lights { 
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+    0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 90%, 0.5),
+    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+    0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+  
+}
+
+.homepg {
+  margin: 0;
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(230, 100%, 95%);
+  background: transparent;
+  /*
+  height: 100vh; */
+  display: flex;
+}
+
+h3 {
+  margin: auto;
+  font-size: 50px;
+  /* font-weight: bold; */
+  animation: lights 5s 750ms linear infinite;
+}  
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+/* .link_wrapper{
+  position: relative;
+} */
+
+a{
+
+
+  font-weight: bold;
+  text-decoration: none;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+}
+
+
+body {
+  font-size: 100%;
+  font-family: Arial, helvetica, sans-serif;
+}
+
+
+.btn1-red-tr,
+.btn1-green-tr,
+.btn1-blue-tr {
+  min-width: 130px;
+  position: relative;
+  /* display: inline-block; */
+  text-align: center;
+  padding: 15px;
+  margin: 30px 25px;
+  font-size: 140%;
+  font-weight: 600;
+  color: #edeae7;
+  transition: 0.5s;
+  font-family: "Times New Roman";
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 0.8px;
+}
+
+
+.btn1-red-tr {
+  background: rgb(136,122,128);
+  /*background: linear-gradient(90deg, rgba(0, 0, 0, 0.367) 0%, rgba(37, 33, 34, 0.732) 20%, rgb(46, 48, 51) 100%);*/
+  background: radial-gradient(circle, rgb(125, 86, 86) 0%, rgba(27, 23, 26, 0.869) 100%);
+  text-decoration: none;
+}
+
+.btn1-green-tr {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgb(80, 96, 79) 0%, rgba(27, 23, 26, 0.869) 100%);
+}
+
+.btn1-blue-tr {
+  background: rgb(136,122,128);
+  background: radial-gradient(circle, rgb(77, 99, 116) 0%, rgba(27, 23, 26, 0.869) 100%);
+  /*background: linear-gradient(90deg, rgba(136,122,128,0.36747198879551823) 0%, rgba(20,24,102,0.7316176470588236) 20%, rgba(131,165,216,1) 100%);*/
+}
+
+.btn1-red-tr:before {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #ea6153;
+  border-left: 2px solid #ea6153;
+  border-right: 2px solid #e43725;
+  border-bottom: 2px solid #e43725;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.btn1-green-tr:before {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #40d47e;
+  border-left: 2px solid #40d47e;
+  border-right: 2px solid #29b765;
+  border-bottom: 2px solid #29b765;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.btn1-blue-tr:before {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #4aa3df;
+  border-left: 2px solid #4aa3df;
+  border-right: 2px solid #258cd1;
+  border-bottom: 2px solid #258cd1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.btn1-red-tr:hover {
+  box-shadow: 7px 7px #a82315, -7px -7px #f29f97;
+  cursor: pointer;
+}
+.btn-red-tr:hover::before {
+  border: 0px;
+}
+
+.btn1-green-tr:hover {
+  box-shadow: 7px 7px #1b7943, -7px -7px #7ee2a8;
+  cursor: pointer;
+}
+.btn1-green-tr:hover::before {
+  border: 0px;
+}
+
+.btn1-blue-tr:hover {
+  box-shadow: 7px 7px #196090, -7px -7px #8bc4ea;
+  cursor: pointer;
+}
+.btn1-blue-tr:hover::before {
+  border: 0px;
+}
+
+
